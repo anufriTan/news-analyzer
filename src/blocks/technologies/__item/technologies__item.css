@@ -1,0 +1,7 @@
+.technologies__item {
+    margin-left: 42px;    
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;    
+}
+

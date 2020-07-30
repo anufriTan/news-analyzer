@@ -1,0 +1,24 @@
+@import url(./__title/header__title.css);
+@import url(./__links/header__links.css);
+@import url(./__link-inline/header__link-inline.css);
+@import url(./__link/header__link.css);
+@import url(./_index/header_index.css);
+@import url(./__line/header__line.css);
+
+.header {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 104px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    box-sizing: border-box;
+    color: #1a1b22;   
+    background-color: #ffffff;
+    border-bottom: 1px solid #b6bcbf;   
+    
+}
+

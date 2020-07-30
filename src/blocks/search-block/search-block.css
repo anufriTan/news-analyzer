@@ -1,0 +1,17 @@
+@import url(./__title/search-block__title.css);
+@import url(./__subtitle/search-block__subtitle.css);
+@import url(./__form/search-block__form.css);
+@import url(./__input/search-block__input.css);
+@import url(./__button/search-block__button.css);
+
+.search-block {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;    
+    padding: 160px 416px 80px;
+    box-sizing: border-box;
+    background-image: url(../../images/phone.jpg);     
+    color: #ffffff;  
+    
+}
+

@@ -1,0 +1,9 @@
+.card__description {
+    margin: 0;    
+    padding: 20px 24px 0;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;    
+}

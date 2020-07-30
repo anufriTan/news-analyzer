@@ -1,0 +1,15 @@
+@import url(./_mnd/chart__column_mnd.css);
+@import url(./_tue/chart__column_tue.css);
+@import url(./_wed/chart__column_wed.css);
+@import url(./_thu/chart__column_thu.css);
+@import url(./_frd/chart__column_frd.css);
+@import url(./_std/chart__column_std.css);
+@import url(./_sun/chart__column_sun.css);
+
+.chart__column {    
+    height: 24px;    
+    background-color: #2f71e5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+}

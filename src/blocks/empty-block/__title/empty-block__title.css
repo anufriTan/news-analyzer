@@ -1,0 +1,10 @@
+.empty-block__title {
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1a1b22;    
+    max-width: 356px;
+    text-align: center;
+    margin: 0;    
+}

@@ -1,0 +1,5 @@
+@import url(./_index/header__link-inline_active_index.css);
+
+.header__link-inline_active {
+    border-bottom: 3px solid #1a1b22;
+}

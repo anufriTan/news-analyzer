@@ -1,0 +1,5 @@
+.chart__month {
+    width: 104px;  
+    display: flex; 
+    flex-direction: column; 
+}

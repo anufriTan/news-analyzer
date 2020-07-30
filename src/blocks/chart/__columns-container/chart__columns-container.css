@@ -1,0 +1,7 @@
+.chart__columns-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 8px;
+}

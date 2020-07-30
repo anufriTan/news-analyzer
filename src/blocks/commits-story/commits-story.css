@@ -1,0 +1,16 @@
+@import url(./__container/commits-story__container.css);
+@import url(./__title-container/commits-story__title-container.css);
+@import url(./__arrow/commits-story__arrow.css);
+
+.commits-story {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0;    
+    box-sizing: border-box;    
+    background-color: #f5f6f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+} 

@@ -1,0 +1,9 @@
+.commits-story__container {    
+    display: flex;    
+    width: 100%;
+    margin: 64px 0 48px;    
+    justify-content: space-between; 
+    overflow: hidden;
+    position: relative;
+    
+}

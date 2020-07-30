@@ -1,0 +1,23 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__links/footer__links.css);
+@import url(./__link-inline/footer__link-inline.css);
+@import url(./__link/footer__link.css);
+@import url(./__icon-image/footer__icon-image.css);
+@import url(./__icon-link/footer__icon-link.css);
+@import url(./__icons/footer__icons.css);
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 104px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    box-sizing: border-box;
+    color: #1a1b22;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    background-color: #ffffff;
+}

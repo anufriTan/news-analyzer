@@ -1,0 +1,7 @@
+@import url(./__text/scale__text.css);
+@import url(./__value/scale__value.css);
+
+.scale {
+    display: flex;
+    margin-left: 104px;
+}

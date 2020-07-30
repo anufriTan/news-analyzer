@@ -1,0 +1,17 @@
+@import url(./__text-container/for-clients__text-container.css);
+@import url(./__text/for-clients__text.css);
+
+.for-clients {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 104px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #1a1b22;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box;    
+    background-color: #ffffff;
+    
+}

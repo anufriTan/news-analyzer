@@ -1,0 +1,8 @@
+.technologies__list {
+    list-style-type: none; 
+    max-width: 598px;   
+    margin: 13px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}

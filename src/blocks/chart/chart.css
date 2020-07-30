@@ -1,0 +1,23 @@
+@import url(./__title/chart__title.css);
+@import url(./__text-container/chart__text-container.css);
+@import url(./__month/chart__month.css);
+@import url(./__text/chart__text.css);
+@import url(./__columns-container/chart__columns-container.css);
+@import url(./__column/chart__column.css);
+@import url(./__data-container/chart__data-container.css);
+@import url(./__data/chart__data.css);
+@import url(./__line/chart__line.css);
+@import url(./__container/chart__container.css);
+@import url(./__column-text/chart__column-text.css);
+
+.chart {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 104px;
+    font-family: 'Roboto', Arial, sans-serif;       
+    box-sizing: border-box;    
+    background-color: #f5f6f7;  
+    display: flex;
+    flex-direction: column;
+}
