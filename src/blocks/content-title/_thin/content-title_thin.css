@@ -1,0 +1,5 @@
+@media screen and (max-width: 1024px) {
+    .content-title.content-title_thin {
+        line-height: 34px;
+    }
+}

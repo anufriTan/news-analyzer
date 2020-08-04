@@ -1,16 +1,57 @@
 @import url(./__container/commits-story__container.css);
-@import url(./__title-container/commits-story__title-container.css);
 @import url(./__arrow/commits-story__arrow.css);
+@import url(./__points/commits-story__points.css);
+@import url(./__small-points/commits-story__small-points.css);
+@import url(./__big-points/commits-story__big-points.css);
 
 .commits-story {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 80px 0;    
+    padding: 70px 0 74px;    
     box-sizing: border-box;    
     background-color: #f5f6f7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
+    display: flex;   
+    align-items: flex-start;  
+    justify-content: center;
+    flex-wrap: wrap;    
+} 
+
+@media screen and (max-width: 1280px) {
+    .commits-story {
+        padding: 60px 0 60px 6.2%;
+        justify-content: space-between;          
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .commits-story {
+        padding: 50px 0 50px 5.2%;             
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .commits-story {
+        padding-top: 40px;    
+        padding-bottom: 36px;         
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .commits-story {
+        padding: 32px 0 30px 5%;                  
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .commits-story {        
+        flex-direction: column;  
+          
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .commits-story {        
+        padding-right: 5%;           
+    }
 } 

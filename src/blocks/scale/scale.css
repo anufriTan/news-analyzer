@@ -5,3 +5,9 @@
     display: flex;
     margin-left: 104px;
 }
+
+@media screen and (max-width: 425px) {
+    .scale {        
+        display: none;          
+    }
+}

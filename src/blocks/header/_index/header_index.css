@@ -4,3 +4,15 @@
     outline: 1px solid #b6bcbf;   
     border-bottom: none;
 }
+
+@media screen and (max-width: 768px) {
+    .header.header_index {
+        margin-bottom: -64px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header.header_index {
+        margin-bottom: -56px;
+    }
+}

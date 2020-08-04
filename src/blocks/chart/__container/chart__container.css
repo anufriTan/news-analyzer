@@ -5,3 +5,10 @@
     height: 504px;
     margin-top: 12px;    
 }
+
+@media screen and (max-width: 425px) {
+    .chart__container {        
+        margin-top: 18px;  
+        height: 312px;         
+    }
+}

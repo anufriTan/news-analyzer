@@ -1,10 +1,24 @@
 .search-block__title {
-    
     font-weight: normal;
     font-size: 60px;
     line-height: 64px;
-    margin: 0;
-    width: 100%;
-       
+    margin: 0;  
     font-family: 'Roboto Slab', Arial, sans-serif;    
 }
+
+@media screen and (max-width: 1024px) {
+    .search-block__title {
+        max-width: 385px;
+        font-size: 48px;
+        line-height: 52px;
+       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-block__title {        
+        font-size: 36px;
+        line-height: 40px;       
+    }
+}
+

@@ -22,3 +22,17 @@
 		transform: rotate(360deg);
 	}
 }
+
+@media screen and (max-width: 768px) {
+    .preloader__circle {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .preloader__circle {
+        width: 36px;
+        height: 36px;
+    }
+} 

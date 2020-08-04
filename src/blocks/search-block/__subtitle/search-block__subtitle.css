@@ -1,7 +1,21 @@
 .search-block__subtitle {
-    max-width: 545px;
     font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     margin: 32px 0 0;        
 }
+
+@media screen and (max-width: 768px) {
+    .search-block__subtitle {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .search-block__subtitle {
+        font-size: 20px;
+        line-height: 26px;
+       
+    }
+} 

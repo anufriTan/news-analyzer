@@ -1,5 +1,5 @@
 # **NewsAnalyzer - сервис для анализа происходящих в мире событий**
-Версия  0.0.1
+Версия  0.0.2
 
 ## О проекте
 Дипломный учебный проект  
@@ -12,3 +12,13 @@
 
 ## Стэк технологий:
 JavaScript(ES6), HTML5, CSS3, BEM, OOP, Git, Webpack
+
+## Инструкции по запуску
+- Скачать или склонировать репозиторий;
+- Установить зависимости при помощи npm - `npm i`;
+- Запустить сборку production-билда - `npm run build`;
+- Запустить в development-режиме - `npm run dev`;
+- Разместить production-билд на github pages - `npm run deploy`.
+
+## Ссылка на github pages:
+https://anufriTan.github.io/news-analyzer/

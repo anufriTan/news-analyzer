@@ -5,3 +5,17 @@
     flex-wrap: wrap;
     justify-content: space-between;    
 }
+@media screen and (max-width: 1024px) {
+    .search-results__container {      
+        margin: 32px 0 22px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .search-results__container {
+        margin: 38px 0 5px;
+    }
+} 
+
+
+

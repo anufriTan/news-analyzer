@@ -3,22 +3,47 @@
 @import url(./__link-inline/header__link-inline.css);
 @import url(./__link/header__link.css);
 @import url(./_index/header_index.css);
-@import url(./__line/header__line.css);
 
 .header {
     max-width: 1440px;
     width: 100%;
-    height: 80px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 104px;
+    height: 80px;  
+    margin: 0 auto;    
+    padding: 0 7.22%;
     display: flex;
     justify-content: space-between;  
     align-items: center;
     box-sizing: border-box;
     color: #1a1b22;   
     background-color: #ffffff;
-    border-bottom: 1px solid #b6bcbf;   
-    
+    border-bottom: 1px solid #b6bcbf;    
 }
 
+@media screen and (max-width: 1280px) {
+    .header {      
+        padding-left: 6.2%;
+        padding-right: 6.2%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {      
+        padding-left: 5.2%;
+        padding-right: 5.2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 64px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header {
+        padding: 0 5%;
+        height: 56px;
+    }
+} 

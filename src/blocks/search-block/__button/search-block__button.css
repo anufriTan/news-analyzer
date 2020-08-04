@@ -19,11 +19,28 @@
 }
 
 .search-block__button:hover {
-    background-color: #347eff;    
+    background-color: #347eff;
+    cursor: pointer;
+    transition: background-color .4s linear;
 }
 
 .search-block__button:active {
     cursor: pointer;
     background-color: #2a65cc;
-    color: #1a1b22;
+    color: #ffffff;    
 }
+
+@media screen and (max-width: 768px) {
+    .search-block__button {
+       width: 160px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .search-block__button {
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+        height: 56px;           
+    }
+} 

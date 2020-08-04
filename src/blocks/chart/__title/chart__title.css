@@ -6,3 +6,9 @@
     color: #1a1b22;
     margin: 0;
 }
+
+@media screen and (max-width: 490px) {
+    .chart__title {        
+        font-size: 22px;         
+    }
+}

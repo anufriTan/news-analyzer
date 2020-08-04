@@ -10,7 +10,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 104px 80px;
+    padding: 40px 7.22% 80px;
     font-family: 'Roboto', Arial, sans-serif;
     color: #1a1b22;
     font-weight: normal;
@@ -21,3 +21,21 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 1280px) {
+    .counter {        
+        padding: 36px 6.2% 60px;           
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+    .counter {        
+        padding: 32px 5.2% 40px;           
+    }
+} 
+
+@media screen and (max-width: 490px) {
+    .counter {        
+        padding: 16px 5% 24px;           
+    }
+} 

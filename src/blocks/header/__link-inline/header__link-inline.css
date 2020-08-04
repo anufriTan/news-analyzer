@@ -1,17 +1,24 @@
 @import url(./_active/header__link-inline_active.css);
 
 .header__link-inline {
-    display: inline;
+    display: flex;
+    align-items: center;
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    padding: 31px 0;
     margin-left: 34px;    
 }
 
 .header__link-inline:hover {
     opacity: .7;
     transition: opacity .4s linear;
+}
+
+@media screen and (max-width: 490px) {
+    .header__link-inline {
+        font-size: 16px;
+        margin-left: 11px;
+    }
 }
 

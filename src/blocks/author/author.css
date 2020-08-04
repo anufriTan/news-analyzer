@@ -1,3 +1,6 @@
+@import url(./__picture/author__picture.css);
+@import url(./__photo-iphone.css/author__photo-iphone.css);
+@import url(./__photo-ipad/author__photo-ipad.css);
 @import url(./__photo/author__photo.css);
 @import url(./__text-container/author__text-container.css);
 @import url(./__text/author__text.css);
@@ -6,14 +9,43 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 80px 104px;
+    padding: 80px 7.22%;
     font-family: 'Roboto', Arial, sans-serif;
     color: #1a1b22;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     box-sizing: border-box;
-    display: flex;
-    background-color: #ffffff;
-     
+    display: flex;    
+    background-color: #ffffff;     
 }
+
+@media screen and (max-width: 1280px) {
+    .author {
+        padding: 60px 6.2%;        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author {
+        padding: 50px 5.2%;  
+        align-items: center;    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author {
+        padding-top: 40px;
+        padding-bottom: 48px;             
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .author {
+        padding: 32px 5%;       
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

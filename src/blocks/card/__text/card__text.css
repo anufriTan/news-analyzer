@@ -4,5 +4,12 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #1a1b22;
+    color: #1a1b22;    
 }
+
+@media screen and (max-width: 1024px) {
+    .card__text {
+        margin-top: 10px;
+    }
+}
+
