@@ -37,15 +37,14 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use:  [
-                    (isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
+                use: [                    
                     {
-                        loader: 'css-loader',
+                        loader: MiniCssExtractPlugin.loader,
                         options: {
-                            importLoaders: 2
+                            publicPath: '../',                                                      
                         }  
                     },      
-                        'postcss-loader'
+                    'css-loader',        
                 ]
             },
             {
@@ -89,7 +88,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({filename: './styles/[name].[contenthash].css'}),
+        new MiniCssExtractPlugin({ 
+            filename: './styles/[name].[contenthash].css'
+        }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
