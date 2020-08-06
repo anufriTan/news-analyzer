@@ -1,0 +1,14 @@
+@import url(./_left/commits-story__arrow_left.css);
+@import url(./_right/commits-story__arrow_rigth.css);
+
+.commits-story__arrow {
+    margin: 0;
+    position: absolute;  
+    top: 40%;
+}
+
+@media screen and (max-width: 1280px) {
+    .commits-story__arrow {
+        display: none;          
+    }
+}

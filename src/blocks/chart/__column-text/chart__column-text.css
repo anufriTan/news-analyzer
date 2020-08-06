@@ -1,0 +1,9 @@
+.chart__column-text {
+    padding-left: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #ffffff;
+}

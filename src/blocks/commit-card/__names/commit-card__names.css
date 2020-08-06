@@ -1,0 +1,6 @@
+.commit-card__names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}

@@ -1,0 +1,11 @@
+.commit-card__author {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 425px) {
+    .commit-card__author {       
+        margin-top: 8px;        
+    }    
+}

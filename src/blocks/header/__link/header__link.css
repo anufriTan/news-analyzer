@@ -1,0 +1,6 @@
+@import url(./_analitics/header__link_analitics.css);
+
+.header__link {
+    text-decoration: none;
+    color: #b6bcbf;
+}
