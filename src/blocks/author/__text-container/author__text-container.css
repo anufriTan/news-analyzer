@@ -1,0 +1,33 @@
+.author__text-container {
+    margin: 0 0 0 56px;
+    padding-top: 54px;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 1280px) {
+    .author__text-container {
+        padding-top: 42px;
+        margin-left: calc(100% * 0.039);
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author__text-container {
+        padding-top: 0; 
+                
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__text-container {
+        margin: 0 0 0 32px;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .author__text-container {
+        margin: 24px 0 0;        
+    }
+}

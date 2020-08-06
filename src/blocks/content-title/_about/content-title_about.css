@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+    .content-title.content-title_about {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-title.content-title_about {       
+        line-height: 40px;
+    }
+}

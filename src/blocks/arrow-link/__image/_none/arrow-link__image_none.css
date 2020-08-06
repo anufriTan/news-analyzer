@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+    .arrow-link__image_none {
+        margin-right: -22px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .arrow-link__image_none {
+        display: none;
+    }
+}

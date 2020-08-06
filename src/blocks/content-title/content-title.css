@@ -1,0 +1,35 @@
+@import url(./_short/content-title_short.css);
+@import url(./_medium/content-title_medium.css);
+@import url(./_thin/content-title_thin.css);
+@import url(./_about/content-title_about.css);
+
+.content-title {
+    margin: 0;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1a1b22;
+    width: 712px;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-title {
+        font-size: 30px;
+        line-height: 40px;
+        width: 336px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content-title {        
+        width: 288px;        
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-title {        
+        line-height: 40px;
+    }
+}
+

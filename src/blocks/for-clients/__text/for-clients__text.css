@@ -1,0 +1,9 @@
+.for-clients__text {
+   margin: 16px 0 8px; 
+}
+
+.for-clients__text:last-child {
+   margin-bottom: 16px; 
+}
+
+

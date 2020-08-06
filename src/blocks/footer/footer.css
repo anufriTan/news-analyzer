@@ -1,0 +1,46 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__links/footer__links.css);
+@import url(./__link-inline/footer__link-inline.css);
+@import url(./__link/footer__link.css);
+@import url(./__icon-image/footer__icon-image.css);
+@import url(./__icon-link/footer__icon-link.css);
+@import url(./__icons/footer__icons.css);
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;   
+    padding: 22px 7.22% 27px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    box-sizing: border-box;
+    color: #1a1b22;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: normal;
+    background-color: #ffffff;    
+}
+
+@media screen and (max-width: 1280px) {
+    .footer {      
+        padding-left: 6.2%;
+        padding-right: 6.2%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {      
+        padding: 16px 5.2% 15px;        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 5% 22px;        
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+}

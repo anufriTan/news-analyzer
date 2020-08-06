@@ -1,0 +1,18 @@
+.empty-block__image {    
+    max-width: 96px;
+    max-height: 96px;
+}
+
+@media screen and (max-width: 768px) {
+    .empty-block__image {
+        max-width: 76px;
+        max-height: 76px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .empty-block__image {
+        max-width: 56px;
+        max-height: 56px;
+    }
+} 

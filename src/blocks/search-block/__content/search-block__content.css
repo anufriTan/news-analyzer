@@ -1,0 +1,21 @@
+.search-block__content {
+    max-width: 608px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .search-block__content {
+        max-width: 450px; 
+        font-size: 36px;
+        line-height: 40px;
+       
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .search-block__content {
+        width: 100%;
+        
+    }
+} 

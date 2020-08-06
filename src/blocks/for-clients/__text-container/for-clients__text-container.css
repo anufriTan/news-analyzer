@@ -1,0 +1,13 @@
+.for-clients__text-container {
+    margin-top: 8px;
+    max-width: 815px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+    .for-clients__text-container {
+       margin-top: 0;
+    }
+ }

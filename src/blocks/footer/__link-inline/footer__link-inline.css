@@ -1,0 +1,34 @@
+.footer__link-inline {
+    display: inline;
+    font-size: 18px;
+    color: #1a1b22;
+    line-height: 24px;
+    margin: 0 0 0 40px;    
+}
+
+.footer__link-inline:first-child {
+    margin-left: 16px;
+}
+
+.footer__link-inline:hover {
+    opacity: .7;
+    transition: opacity .4s linear;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__link-inline {
+       margin-left: 25px;      
+       font-family: 'Source San Pro', Arial, sans-serif;
+    }
+    .footer__link-inline:first-child {        
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .footer__link-inline {
+       margin-left: 0; 
+       margin-bottom: 24px;      
+    }
+}

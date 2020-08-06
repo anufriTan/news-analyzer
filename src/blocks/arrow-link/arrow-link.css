@@ -1,0 +1,28 @@
+@import url(./__image/arrow-link__image.css);
+@import url(./__image/_none/arrow-link__image_none.css);
+@import url(./_button/arrow-link_button.css);
+
+.arrow-link {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;    
+    color: #1a1b22;
+    text-decoration: none; 
+    max-width: 223px;
+    display: flex;
+    align-items: center;
+}    
+
+.arrow-link:hover {
+    opacity: .7;
+    transition: opacity .4s linear;
+}
+
+@media screen and (max-width: 620px) {
+    .arrow-link {
+        margin-top: 16px;
+    }
+}
+
