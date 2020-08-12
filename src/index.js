@@ -4,6 +4,7 @@ import {NewsCard} from './js/components/NewsCard.js';
 import {NewsCardList} from './js/components/NewsCardList.js';
 import {NewsApi} from './js/modules/NewsApi.js';
 
+
 const searchResultsContainer = document.querySelector('.search-results__container');
 const searchResults = document.querySelector('.search-results');
 const searchForm = document.forms.search;
@@ -23,6 +24,7 @@ const config = {
     apiKey: 'df5c64804720447b891dc492b64e3ab6',
     pageSize: 100             
 }; 
+
 
 const newsApi = new NewsApi(config);
 const createCardCallback = (sourceName, cardTitle, publishedAt, cardDescription, urlToImage) => new NewsCard(sourceName, cardTitle, publishedAt, cardDescription, urlToImage).createNewsCard();
@@ -44,7 +46,10 @@ searchForm.addEventListener('submit', function(event) {
 })
 
 
-    
+
+
+
+
 
 
 

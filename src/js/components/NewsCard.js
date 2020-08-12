@@ -8,8 +8,6 @@ export class NewsCard {
         
     }  
     
-    
-
     createNewsCard() {
         const newsCard = document.createElement('div');
         const newsCardImage = document.createElement('img');
@@ -22,30 +20,12 @@ export class NewsCard {
         newsCard.classList.add('card');
         newsCardImage.classList.add('card__image');
         
-        if (!(this.urlToImage)) {
-            newsCardImage.setAttribute('src', '../../images/green.jpg');
-        } else {
-            newsCardImage.setAttribute('src', `${this.urlToImage}`);
-        }
+        newsCardImage.setAttribute('src', `${this.urlToImage}`);
+        
         newsCardDescription.classList.add('card__description');
 
-        newsCardTime.classList.add('card__data'); 
-
-        const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня','июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-        let correctMonth;
-        if (this.publishedAt.substr(5, 2).startsWith('0')) {
-            correctMonth = this.publishedAt.substr(6, 1) - 1;
-        } else {
-            correctMonth = this.publishedAt.substr(5, 2) - 1;
-        }
-        let correctDay;
-        if (this.publishedAt.substr(8, 2).startsWith('0')) {
-            correctDay = this.publishedAt.substr(9, 1);
-        } else {
-            correctDay = this.publishedAt.substr(8, 2);
-        }   
-        
-        newsCardTime.textContent = correctDay + ' ' + months[correctMonth] + ', ' + this.publishedAt.substr(0,4);
+        newsCardTime.classList.add('card__data');               
+        newsCardTime.textContent = formatDate(this.publishedAt);
 
         newsCardTitle.classList.add('card__title');
         newsCardTitle.textContent = this.cardTitle;
@@ -66,9 +46,7 @@ export class NewsCard {
         this.newsCardElement = newsCard;
     
         return newsCard;
-    }    
-
-    
+    }   
 }
 
-
+import {formatDate} from '../utils/format-date.js';

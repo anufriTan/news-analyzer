@@ -1,0 +1,6 @@
+@import url(./bullet/swiper-pagination-bullet.css);
+
+.swiper-pagination {
+    margin-top: 48px;
+    position: static !important;
+}
