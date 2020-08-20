@@ -22,9 +22,11 @@ const searchInput = new SearchInput(searchForm, searchWord, searchButton);
 const newsCardList = new NewsCardList(searchResultsContainer, createCardCallback, emptyBlock, searchResultsButton);
 
 window.onload = function() {
+    if (dataStorage.getCardsFromDataStorage()) {
     searchResults.classList.add('search-results_is-opened');
     newsCardList.render(dataStorage.getCardsFromDataStorage());
-    searchWord.value = localStorage.getItem('keyWord');    
+    searchWord.value = localStorage.getItem('keyWord');  
+    }  
 }
 
 searchButton.addEventListener('click', function() { 
