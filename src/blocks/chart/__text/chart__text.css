@@ -1,3 +1,5 @@
+@import url(./_month/chart__text_month.css);
+
 .chart__text {
     font-size: 12px;
     font-weight: normal; 

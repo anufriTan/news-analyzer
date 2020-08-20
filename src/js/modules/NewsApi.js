@@ -1,17 +1,9 @@
 export class NewsApi {
-    constructor(config) {
-        this.url = config.baseUrl;        
-        this.from = config.from;
-        this.to = config.to;
-        this.apiKey = config.apiKey;
-        this.pageSize = config.pageSize; 
-        
-        this.getNews = this.getNews.bind(this);
-    }
+    constructor() {}
 
-    getNews(someWord) {
-        return fetch(`${this.url}` + `q=${someWord}` + `&from=${this.from}` + `&to=${this.to}` +
-            `&apiKey=${this.apiKey}` + `&pageSize=${this.pageSize}`) 
+    getNews(someWord) {        
+        return fetch(`${URL_NEWS_API}` + `q=${someWord}` + `&from=${FROM_DATE}` + `&to=${TO_DATE}` +
+            `&apiKey=${KEY_NEWS_API}` + `&pageSize=${PAGE_SIZE}`)                
         .then(res => {
           if (res.ok) {
             return res.json();
@@ -21,4 +13,8 @@ export class NewsApi {
     }  
 }
 
-
+import {URL_NEWS_API} from "../constans/constans.js";
+import {FROM_DATE} from "../constans/constans.js";
+import {TO_DATE} from "../constans/constans.js";
+import {KEY_NEWS_API} from "../constans/constans.js";
+import {PAGE_SIZE} from "../constans/constans.js";

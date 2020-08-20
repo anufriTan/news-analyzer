@@ -24,9 +24,10 @@
             <div class="search-block__content">                     
                 <h1 class="search-block__title">Что в мире творится?</h1>
                 <p class="search-block__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search-block__form" name="search">
-                    <input type="text" class="search-block__input" name="word" placeholder="Введите тему новости" required>
-                    <button type="submit" class="search-block__button">Искать</button>
+                <form class="search-block__form" name="search" novalidate>
+                    <input type="text" class="search-block__input" name="word" placeholder="Введите тему новости" required>   
+                    <span class="search-block__error"></span>            
+                    <button type="submit" class="search-block__button">Искать</button>                    
                 </form>
             </div>           
         </section>

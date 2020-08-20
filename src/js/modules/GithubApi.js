@@ -1,12 +1,10 @@
 export class GithubApi {
-    constructor(config) {
-        this.url = config.baseUrl;        
-                
-        this.getCommits = this.getCommits.bind(this);
-    }
+    constructor() {}
 
     getCommits() {
-        return fetch(`${this.url}`) 
+        return fetch(`${URL_GITHUB}`, {
+          per_page: `${COMMIT_NUMBER_TO_SHOW}`
+        }) 
         .then(res => {
           if (res.ok) {
             return res.json();
@@ -15,3 +13,6 @@ export class GithubApi {
         })               
     }  
 }
+
+import {URL_GITHUB} from '../constans/constans.js';
+import {COMMIT_NUMBER_TO_SHOW} from '../constans/constans.js';

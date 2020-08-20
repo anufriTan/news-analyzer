@@ -10,11 +10,7 @@ const swiperContainer = document.querySelector('.commits-story__container');
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 Swiper.use([Navigation, Pagination]);
 
-const configGithub = {
-    baseUrl: 'https://api.github.com/repos/anufriTan/news-analyzer/commits'
-}
-
-const githubApi = new GithubApi(configGithub);
+const githubApi = new GithubApi();
 const createCommitCardCallback = (committerName, committerEmail, commitDate, commitMessage, authorAvatar) => new CommitCard(committerName, committerEmail, commitDate, commitMessage, authorAvatar).createCommitCard();
 
 githubApi.getCommits().then(res => {
@@ -33,7 +29,8 @@ githubApi.getCommits().then(res => {
         }
     }); 
 })
-    .catch((err) => {        
+    .catch((err) => {  
+        alert('При загрузке страницы произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте перезагрузить страницу');      
         console.log(err);
     });
 

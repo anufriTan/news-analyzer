@@ -5,6 +5,11 @@
     font-size: 26px;
     line-height: 30px;
     color: #1a1b22;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 1024px) {
@@ -14,9 +19,10 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 490px) {
     .card__title {
         line-height: 26px;
         margin-top: 16px;
+        -webkit-line-clamp: 2;
     }
 } 

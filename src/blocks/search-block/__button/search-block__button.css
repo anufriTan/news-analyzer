@@ -1,6 +1,6 @@
 .search-block__button {   
-    width: 168px;
-    height: 100%;
+    width: 168px;   
+    height: 66px;
     padding: 0;
     border-radius: 100px;
     background-color: #2f71e5;
@@ -33,14 +33,15 @@
 @media screen and (max-width: 768px) {
     .search-block__button {
        width: 160px;
+       height: 56px;
     }
 }
 
 @media screen and (max-width: 490px) {
     .search-block__button {
         position: static;
+        order: 3;
         width: 100%;
-        margin-top: 16px;
-        height: 56px;           
+        margin-top: 16px;        
     }
 } 

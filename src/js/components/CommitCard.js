@@ -42,13 +42,10 @@ export class CommitCard {
         commitCardAuthor.appendChild(commitCardNames);        
         commitCard.appendChild(commitDate);
         commitCard.appendChild(commitCardAuthor);
-        commitCard.appendChild(commitCardText);
-    
-        this.commitCardElement = commitCard;
-    
+        commitCard.appendChild(commitCardText);    
+         
         return commitCard;
-    }
-    
+    }    
 }
 
 import {formatDate} from '../utils/format-date.js';
