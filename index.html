@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsAnalyzer</title>
-    <link rel="stylesheet" href="./styles/index.74cc6fb1e28ca1649835.css">
+    <link rel="stylesheet" href="./styles/index.2446630e87f0d7e5bcd5.css">
     <link rel="icon" href="./images/favicon.ico">
     <meta name="description" content="Сервис по поиску и анализу новостей">
     <meta name="author" content="Татьяна Ануфриева">
@@ -24,9 +24,10 @@
             <div class="search-block__content">                     
                 <h1 class="search-block__title">Что в мире творится?</h1>
                 <p class="search-block__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-                <form class="search-block__form">
-                    <input type="text" class="search-block__input" name="search-word" placeholder="Введите тему новости" required>
-                    <button type="submit" class="search-block__button">Искать</button>
+                <form class="search-block__form" name="search" novalidate>
+                    <input type="text" class="search-block__input" name="word" placeholder="Введите тему новости" required>   
+                    <span class="search-block__error"></span>            
+                    <button type="submit" class="search-block__button">Искать</button>                    
                 </form>
             </div>           
         </section>
@@ -35,7 +36,7 @@
                 <i class="preloader__circle"></i>
             </div>
             <h4 class="preloader__text">Идет поиск новостей...</h4>
-        </section>
+        </section> 
         <section class="empty-block">
             <img src="./images/not-found.svg" alt="" class="empty-block__image">
             <h4 class="empty-block__title">Ничего не найдено</h4> 
@@ -48,43 +49,7 @@
                     <img class="arrow-link__image" src="./images/arrow.svg" alt="стрелка">
                 </a>                 
             </div>
-            <div class="search-results__container">
-                <div class="card">
-                    <a class="card__link" href="https://lenta.ru/" target="_blank">
-                        <img class="card__image" src="./images/flowers.jpg" alt="Картинка">
-                    </a>  
-                    <div class="card__description">
-                        <p class="card__data">2 августа, 2019</p>
-                        <h3 class="card__title">Национальное достояние – парки</h3>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система 
-                            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>                     
-                    </div>
-                    <p class="card__site">Лента.ру</p>                     
-                </div>
-                <div class="card">
-                    <a class="card__link" href="https://meduza.io/" target="_blank"> 
-                        <img class="card__image" src="./images/flowers2.jpg" alt="Картинка">
-                    </a>
-                    <div class="card__description">
-                        <p class="card__data">2 августа, 2019</p>
-                        <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного 
-                            из местных чудес природы.</p>                             
-                    </div>                  
-                    <p class="card__site">Медуза</p>                   
-                </div>
-                <div class="card">
-                    <a class="card__link" href="https://ria.ru/" target="_blank">
-                        <img class="card__image" src="./images/green.jpg" alt="Картинка">
-                    </a>
-                    <div class="card__description">
-                        <p class="card__data">2 августа, 2019</p>
-                        <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он
-                            отправился в Двинско-Пинежскую тайгу, где...</p>                        
-                    </div>
-                    <p class="card__site">Риа</p>                    
-                </div>                     
+            <div class="search-results__container">               
             </div>     
             <button class="search-results__button">Показать еще</button>            
         </section>     
@@ -95,7 +60,7 @@
                 <img src="./images/avatar.jpg" alt="Фото автора проекта" class="author__photo">
             </picture>
             <div class="author__text-container">
-                <h2 class="content-title">Об авторе</h2>
+                <h2 class="content-title content-title_short">Об авторе</h2>
                 <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
                 <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам. 
                                             Если хотите, оставьте свои контакты: email и телефон.</p>    
@@ -118,6 +83,6 @@
                 
     </footer>     
     
-<script src="./scripts/index.5ee3b77c23cd8eb134a3.js"></script>
+<script src="./scripts/index.9c27a04cd0f0a8030550.js"></script>
 </body>
 </html>

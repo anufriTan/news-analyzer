@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsAnalyzer</title>
-    <link rel="stylesheet" href="./styles/about.5bce952853774b76729c.css">
+    <link rel="stylesheet" href="./styles/about.bbf3db7de9ae84cbdd4a.css">
     <link rel="icon" href="./images/favicon.ico">
     <meta name="description" content="Сервис по поиску и анализу новостей">
     <meta name="author" content="Татьяна Ануфриева">
@@ -62,7 +62,7 @@
                 <img src="./images/avatar.jpg" alt="Фото автора проекта" class="author__photo">
             </picture>            
             <div class="author__text-container">
-                <h2 class="content-title">Об авторе</h2>
+                <h2 class="content-title content-title_short">Об авторе</h2>
                 <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
                 <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>    
             </div>            
@@ -72,84 +72,12 @@
             <a class="arrow-link arrow-link_button" href="https://github.com/anufriTan" target="_blank">Открыть в  Github
                 <img class="arrow-link__image arrow-link__image_none" src="./images/arrow.svg" alt="стрелка">
             </a>          
-            <div class="commits-story__container">                
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="./images/anton.jpg" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="./images/anton.jpg" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="./images/anton.jpg" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="./images/anton.jpg" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="./images/anton.jpg" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <img class="commits-story__arrow commits-story__arrow_left" src="./images/left.svg" alt="Стрелка налево">
-                <img class="commits-story__arrow commits-story__arrow_right" src="./images/right.svg" alt="Стрелка направо">
-            </div>
-            <picture class="commits-story__points">
-                <source class="commits-story__small-points" srcset="./images/points_five.svg" media="(max-width: 700px)"> 
-                <img class="commits-story__big-points" src="./images/points.svg" alt="Значок прокрутки">
-            </picture>            
+            <div class="commits-story__container">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>               
+            </div>            
         </section>  
     </main>
     <footer class="footer">
@@ -167,6 +95,8 @@
         </ul>          
     </footer>      
     
-    <script src="./scripts/about.ffaad3ca4333dab5be5d.js"></script>
+    <script src="./scripts/about.c896873a5abe42415f18.js"></script>
 </body>
 </html>
+
+                
