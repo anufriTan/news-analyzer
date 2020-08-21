@@ -62,7 +62,7 @@
                 <img src="<%=require('./images/avatar.jpg').default%>" alt="Фото автора проекта" class="author__photo">
             </picture>            
             <div class="author__text-container">
-                <h2 class="content-title">Об авторе</h2>
+                <h2 class="content-title content-title_short">Об авторе</h2>
                 <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
                 <p class="author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>    
             </div>            
@@ -72,84 +72,12 @@
             <a class="arrow-link arrow-link_button" href="https://github.com/anufriTan" target="_blank">Открыть в  Github
                 <img class="arrow-link__image arrow-link__image_none" src="<%=require('./images/arrow.svg').default%>" alt="стрелка">
             </a>          
-            <div class="commits-story__container">                
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/anton.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/anton.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/anton.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/anton.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/anton.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div> 
-                        </div>                  
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>   
-                    </a>
-                </div>
-                <img class="commits-story__arrow commits-story__arrow_left" src="<%=require('./images/left.svg').default%>" alt="Стрелка налево">
-                <img class="commits-story__arrow commits-story__arrow_right" src="<%=require('./images/right.svg').default%>" alt="Стрелка направо">
-            </div>
-            <picture class="commits-story__points">
-                <source class="commits-story__small-points" srcset="<%=require('./images/points_five.svg').default%>" media="(max-width: 700px)"> 
-                <img class="commits-story__big-points" src="<%=require('./images/points.svg').default%>" alt="Значок прокрутки">
-            </picture>            
+            <div class="commits-story__container">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>               
+            </div>            
         </section>  
     </main>
     <footer class="footer">
@@ -170,3 +98,5 @@
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 </html>
+
+                

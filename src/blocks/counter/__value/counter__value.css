@@ -1,3 +1,6 @@
+@import url(./_news/counter__value_news.css);
+@import url(./_titul/counter__value_titul.css);
+
 .counter__value {
     font-weight: bold;
 }

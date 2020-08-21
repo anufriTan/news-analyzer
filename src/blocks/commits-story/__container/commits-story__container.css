@@ -1,21 +1,22 @@
 .commits-story__container {    
     display: flex;    
     width: 100%;
-    margin: 64px 0 42px;    
+    margin: 64px 0 0;    
     justify-content: space-between; 
-    overflow: hidden;
-    position: relative;  
-     
-}
+    align-items: center;   
+    position: relative; 
+    flex-direction: column;
+    overflow: hidden; 
+} 
 
 @media screen and (max-width: 768px) {
     .commits-story__container {
-         margin: 32px 0 30px;           
+         margin: 32px 0 0;           
     }
 }
 
 @media screen and (max-width: 425px) {
     .commits-story__container {
-        margin: 16px 0;                  
+        margin: 16px 0 0;                  
     }
 }

@@ -1,6 +1,7 @@
 @import url(./__circle/preloader__circle.css);
 @import url(./__text/preloader__text.css);
 @import url(./__circle-container/preloader__circle-container.css);
+@import url(./_is-opened/preloader_is-opened.css);
 
 .preloader {
     max-width:  1440px;
@@ -13,7 +14,8 @@
     display: flex;
     flex-direction: column;    
     align-items: center;    
-    justify-content: space-between;    
+    justify-content: space-between;
+    display: none;    
 }
 
 @media screen and (max-width: 768px) {

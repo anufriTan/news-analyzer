@@ -7,9 +7,7 @@
 @media screen and (max-width: 768px) {
     .search-block__content {
         max-width: 450px; 
-        font-size: 36px;
-        line-height: 40px;
-       
+              
     }
 }
 

@@ -1,0 +1,27 @@
+.swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 42.5% !important;
+    left: 26px !important;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background-image: url(../../../../images/prev.svg);
+    background-color: #1a1b22; 
+    background-size: 8px 14px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 5;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .swiper-button-prev {
+        display: none !important;          
+    }
+}

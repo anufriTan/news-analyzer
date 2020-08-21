@@ -9,7 +9,7 @@
 
 .commit-card {
     min-width: calc((100% - 64px)/3.44);
-    height: 288px;
+    height: 288px !important;
     background-color: #ffffff;
     margin: 0 16px 0 0;
     display: flex;
@@ -37,14 +37,14 @@
 @media screen and (max-width: 1280px) {
     .commit-card {
         min-width: calc((100% - 32px)/3.2); 
-        height: 254px;  
+        height: 254px !important;  
         position: static;         
     }
 }
 
 @media screen and (max-width: 1024px) {
     .commit-card {      
-        height: 242px; 
+        height: 242px !important; 
         min-width: calc((100% - 32px)/2.9);             
     }
 }
@@ -79,9 +79,9 @@
 @media screen and (max-width: 375px) {
     .commit-card { 
         min-width: 100%;
-        height: 264px;
+        height: 264px !important;
         min-width: 100%;
-        margin: 0; 
+       
     }
 }
 

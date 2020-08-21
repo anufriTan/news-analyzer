@@ -17,13 +17,13 @@
     .content-title {
         font-size: 30px;
         line-height: 40px;
-        width: 336px;
+        max-width: 336px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .content-title {        
-        width: 288px;        
+        max-width: 288px;        
     }
 }
 

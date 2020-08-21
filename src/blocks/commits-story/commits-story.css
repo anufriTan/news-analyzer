@@ -1,8 +1,4 @@
 @import url(./__container/commits-story__container.css);
-@import url(./__arrow/commits-story__arrow.css);
-@import url(./__points/commits-story__points.css);
-@import url(./__small-points/commits-story__small-points.css);
-@import url(./__big-points/commits-story__big-points.css);
 
 .commits-story {
     max-width: 1440px;

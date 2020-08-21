@@ -1,5 +1,4 @@
 @import url(./__data/card__data.css);
-@import url(./__link/card__link.css);
 @import url(./__image/card__image.css);
 @import url(./__description/card__description.css);
 @import url(./__site/card__site.css);
@@ -11,10 +10,12 @@
     height: 576px;
     margin: 0 0 16px;
     border-radius: 16px;
-    background-color: #ffffff;
+    background-color: #ffffff;  
+    cursor: pointer;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .card:hover {
