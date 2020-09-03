@@ -57,32 +57,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.(jpg|jpe?g|png|svg|webp|gif|ico)$/, 
+                test: /\.(jpg|png|svg|gif|ico)$/i, 
                 use:  [ 
                     'file-loader?name=./images/[name].[ext]',                   
                     {
                         loader: 'image-webpack-loader',
-                        options: {
-                            esModule: false,
-                            mozjpeg: {
-                                progressive: true,
-                                quality: 65
-                            },
-                            optipng: {
-                                enabled: false,
-                            },
-                            pngquant: {
-                                quality: [0.65, 0.90],
-                                speed: 4
-                            },
-                            gifsicle: {
-                                interlaced: false,
-                            },
-                            webp: {
-                                quality: 75
-                            }
-                        }
-                },
+                    }
                 ]    
             }    
         ]
