@@ -5,9 +5,13 @@ import {DAY_AGO_NUMBER} from '../constans/constans.js';
 // Это промежуточная функция из массива карточек делает объект, где ключи - это дни публикаций, 
 // а значения - количество упоминаний запрашиваемого слова в заголовках и статьях 
 function getDateObject(datesArray) {
-    const blanks = datesArray.map(function(item) {
-        return item.publishedAt.substr(8, 2);
-    })
+    const blanks = datesArray.map(function(item) {        
+        if (item.publishedAt.substr(8, 2).startsWith('0')) {
+            return item.publishedAt.substr(9, 1);
+        }   else {
+            return item.publishedAt.substr(8, 2);
+        }       
+    })    
     const resultsInitial = blanks.reduce(function(previousValue, item) { 
         if (!previousValue[item]) {
             previousValue[item] = 1;
@@ -35,14 +39,12 @@ function getAllKeysDateArray() {
 // значит публикаций в этот день не было, и ключ записывается в объект со значением 0.
 // В итоге получаем массив с количеством упоминаний за расчетный период. 
 export function getColumnsWidth(someArray) {
-    const results = getDateObject(someArray);
-    const keys = getAllKeysDateArray();
-    for (let i = 0; i < keys.length; i++) {
+    const results = getDateObject(someArray);    
+    const keys = getAllKeysDateArray();   
+    for (let i = 0; i < keys.length; i++) {       
         if (!(results[keys[i]])) {
-            results[keys[i]] = 0;
-        }   
+            results[keys[i]] = 0;            
+        }        
     }
     return Object.values(results);
 }
-
-
