@@ -40,18 +40,16 @@ export class Statistics {
                 return item;
             }       
             return cardsTitleMatch;        
-        })
+        })        
         const cardsDescriptionMatch = this.cardsArray.filter(function(item) {           
             if (!!(item.description) && item.description.includes(keyWord)) {
                 return item;
             } 
             return cardsDescriptionMatch;
-        })
+        })           
         const cardsMatch = cardsTitleMatch.concat(cardsDescriptionMatch);
-       
         // Передаю массив с совпадениями функции, которая вынесена в утилиты для последующей обработки. Описание там же.
-        const finishResults = getColumnsWidth(cardsMatch);      
-        
+        const finishResults = getColumnsWidth(cardsMatch);           
          // Итоговая обработка данных для отрисовки графика и простановки значений
         const sumAllElements = finishResults.reduce(function(prevVal, item) {
             return prevVal + item;
@@ -65,8 +63,9 @@ export class Statistics {
         Array.from(this.values).forEach(function(item, index) {
             item.textContent = finishResults[index];
         })        
-    }
+    }   
 }    
+
     
 import {getMonth} from '../utils/get-month.js';
 import {getWeekDays} from '../utils/get-week-days.js';
